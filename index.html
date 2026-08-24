@@ -1,10 +1,139 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-    <meta charset="UTF-8">
-    <title>Portofoliu</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Andrei Mănescu | Portofoliu & CV</title>
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <!-- Stiluri CSS -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>Salut! Site-ul funcționează.</h1>
+
+  <!-- Bara de navigare -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">AM<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">Despre</a></li>
+        <li><a href="#skills">Competențe</a></li>
+        <li><a href="#projects">Proiecte</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="cv.pdf" target="_blank" class="btn-sm">CV PDF</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+      <p class="tagline">Student Inginerie & Pasionat de Tehnologii Moderne</p>
+      <h1>Salut, sunt <span>Andrei Mănescu</span>.</h1>
+      <p class="description">
+        Pasionat de retelistica, tehnologii cloud, algoritimi de AI/LLM,
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">Vezi Proiectele</a>
+        <a href="https://github.com/andreim10" target="_blank" class="btn btn-secondary">GitHub</a>
+      </div>
+    </section>
+
+    <!-- Sectiunea Competente -->
+    <section class="section" id="skills">
+      <h2 class="section-title">Competențe Tehnice</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Limbaje de Programare</h3>
+          <div class="tags">
+            <span class="tag">C / C++</span>
+            <span class="tag">Python</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Rețele & Cloud</h3>
+          <div class="tags">
+            <span class="tag">TCP/IP</span>
+            <span class="tag">Cisco CCNA-in dezvoltarea cunostintelor</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Linux </span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Hardware & Embedded</h3>
+          <div class="tags">
+            <span class="tag">ESP32 / STM32</span>
+            <span class="tag">Arduino</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sectiunea Proiecte -->
+    <section class="section" id="projects">
+      <h2 class="section-title">Proiecte Relevante</h2>
+      <div class="projects-grid">
+        
+        <!-- Card Proiect 1 -->
+        <div class="project-card">
+          <div class="project-header">
+            <h3>Email Firewall & Filter</h3>
+            <span class="project-type">C++ / Python</span>
+          </div>
+          <p>
+            Sistem hibrid de filtrare automată a traficului de mesaje bazat pe socketuri TCP/IP, expresii regulate și clasificare automată a conținutului malițios.
+          </p>
+          <div class="tags">
+            <span class="tag">C++</span>
+            <span class="tag">Sockets</span>
+            <span class="tag">NLP</span>
+            <span class="tag">Regex</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/andreim10" target="_blank">Cod Sursă &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Card Proiect 2 -->
+        <div class="project-card">
+          <div class="project-header">
+            <h3>Asistent AI Local & Interfață</h3>
+            <span class="project-type">Python / Docker</span>
+          </div>
+          <p>
+            Aplicație integrată pentru interacțiune cu modele LLM locale, containerizată complet cu Docker, suportând streaming de date și interfețe web/chat.
+          </p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Ollama</span>
+            <span class="tag">Streamlit</span>
+            <span class="tag">Docker</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/andreim10" target="_blank">Cod Sursă &rarr;</a>
+          </div>
+        </div>
+
+        
+
+      </div>
+    </section>
+
+    <!-- Sectiunea Contact -->
+    <section class="section contact" id="contact">
+      <h2 class="section-title">Hai să colaborăm</h2>
+      <p>Sunt deschis la internshipuri, colaborări pe proiecte software sau hardware și networking profesional.</p>
+      <div class="contact-links">
+        <a href="https://github.com/andreim10" target="_blank" class="btn btn-secondary">GitHub</a>
+        <a href="mailto:andreimadreim27@yahoo.com" class="btn btn-primary">Trimite un Email</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Andrei Mănescu. Construit cu GitHub Pages.</p>
+  </footer>
+
 </body>
 </html>
